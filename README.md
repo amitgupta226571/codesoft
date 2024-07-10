@@ -6,4 +6,4 @@
 
 **OVERVIEW**
 
-![Screenshot_10-7-2024_203641_127 0 0 1](https://github.com/amitgupta226571/codesoft/assets/163492672/e40dbcac-74b7-4277-9936-878b794a6bc5)
+http://127.0.0.1:5500/codesoft1/index.html
