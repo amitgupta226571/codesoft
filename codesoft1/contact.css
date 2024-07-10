@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    color: #fff;
+}
+
+.header-logo img {
+    height: 40px;
+}
+
+#navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar li {
+    margin-left: 20px;
+}
+
+#navbar a {
+    color: #fff;
+    font-size: 16px;
+}
+
+#navbar a.active {
+    border-bottom: 2px solid #fff;
+}
+
+#mobile {
+    display: none;
+}
+
+/* Contact Section */
+.section-p1 {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.contact-form {
+    margin-right: 50px;
+}
+
+.contact-form h3 {
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-info {
+    max-width: 300px;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.follow {
+    margin-top: 20px;
+}
+
+.follow h4 {
+    margin-bottom: 10px;
+}
+
+.follow .icon i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+footer .col {
+    margin: 20px 0;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    display: block;
+    margin: 5px 0;
+}
+
+footer .icon i {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    #mobile {
+        display: block;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #navbar.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+}

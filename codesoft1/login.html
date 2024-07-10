@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="image/png" href="images/icon/favicon.png">
+    <title>Login SignUp</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("form").submit(function (event) {
+                event.preventDefault();
+                alert("Form Registered successfully!");
+            });
+        });
+    </script>
+    <style>
+        body {
+          background-image: url('https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?cs=srgb&dl=pexels-francesco-ungaro-396547.jpg&fm=jpg');
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" id="log" onclick="login()" style="color: #fff;">Sign In</button>
+            <button type="button" class="toggle-btn" id="reg" onclick="register()">Sign Up</button>
+        </div>
+        <div class="social-icons">
+            <!-- Add social icons here if needed -->
+        </div>
+
+        <!-- Login Form -->
+        <form id="login" class="input-group">
+            <div class="inp">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSwR0cZSXp2qwZzKi7rDxcnYSmlDPsLB1POQ&s" alt="User Icon">
+                <input type="text" id="email" class="input-field" placeholder="Username or Phone Number" style="width: 88%; border:none;" required="required">
+            </div>
+            <div class="inp">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwm5AU4I7HUZ_iT0sC2Od8cV1BpvY38OO3Uw&usqp=CAU" alt="Password Icon">
+                <input type="password" id="password" class="input-field" placeholder="Password" style="width: 88%; border: none;" required="required">
+            </div>
+            <input type="checkbox" class="check-box">Remember Password
+            <button type="submit" class="submit-btn">Log In</button>
+        </form>
+
+        <div class="other" id="other">
+            <div class="instead">
+                <h3>or</h3>
+            </div>
+            <button class="connect" onclick="google()">
+                <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google Icon">
+                <span>Sign in with Google</span>
+            </button>
+        </div>
+
+        <!-- Registration Form -->
+        <form id="register" class="input-group" action="register.php" method="post">
+            <input type="text" class="input-field" name="full_name" placeholder="Full Name" required="required">
+            <input type="email" class="input-field" name="email" placeholder="Email Address" required="required">
+            <input type="password" class="input-field" name="password" placeholder="Create Password" required="required">
+            <input type="password" class="input-field" placeholder="Confirm Password" required="required">
+            <input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()">I agree to the Terms & Conditions
+            <button type="submit" id="btnSubmit" class="submit-btn reg-btn">Register</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script src="register.php"></script>
+</body>
+</html>
